@@ -40,6 +40,9 @@ You can install "pytest-fold" via `pip`_ from `PyPI`_::
 
     $ pip install pytest-fold
 
+You can also create a virtual environment using poetry:
+
+    $ poetry env use python
 
 Usage
 -----
