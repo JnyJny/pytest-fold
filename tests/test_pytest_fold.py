@@ -2,13 +2,16 @@ import sys
 import time
 import logging
 import pytest
-from pytest_fold import __version__
+from pytest_fold.plugin import __version__
+
+print(__version__)
 
 logger = logging.getLogger()
 logger.setLevel(logging.WARNING)
 logger.propagate = True
 stdout_handler = logging.StreamHandler(sys.stdout)
 logger.addHandler(stdout_handler)
+
 
 def test_version():
     assert __version__ == "0.1.0"
@@ -128,6 +131,7 @@ def test_which_passes_1():
 @pytest.fixture()
 def fixture_for_fun():
     pass
+
 
 # def test_fixture_for_fun_pass(fixture_for_fun):
 #     assert 1

@@ -6,14 +6,14 @@ with open("README.rst", encoding="utf-8") as f:
     readme = f.read()
 
 setup(
-    name="pytest-fold2",
-    entry_points={"pytest11": ["pytest_fold2 = pytest_fold2.plugin"]},
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    name="pytest-fold",
+    entry_points={"pytest11": ["pytest_fold = plugin"]},
+    packages=find_packages(where="."),
+    package_dir={"": "."},
     platforms="any",
     python_requires=">=3.5",
     install_requires=["pytest>=5.2"],
-    use_scm_version={"write_to": "src/pytest_fold2/_version.py"},
+    use_scm_version={"write_to": "_version.py"},
     setup_requires=["setuptools_scm"],
     url="https://github.com/pytest-dev/pytest-fold",
     license="MIT",

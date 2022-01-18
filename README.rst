@@ -24,7 +24,7 @@ Features
 
 - PHASE 2:
  - Folds console output for failing tests so they only take up a single line each
- - Allows unfolding with user interaction
+ - Allows unfolding with user interaction (e.g. KB "Space," arrows, Enter; or mouse)
 
 
 Requirements
